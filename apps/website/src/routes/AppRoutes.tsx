@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PublicLayout from "../layouts/PublicLayout";
 import Home from "../pages/Home";
+import Features from "../pages/Features";
 
 function PlaceholderPage({ title }: { title: string }) {
   return (
@@ -18,11 +19,7 @@ function AppRoutes() {
       <PublicLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-
-          <Route
-            path="/features"
-            element={<PlaceholderPage title="Features" />}
-          />
+          <Route path="/features" element={<Features />} />
 
           <Route
             path="/how-it-works"
