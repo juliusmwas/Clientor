@@ -68,15 +68,15 @@
 }
 
 .dark {
-  --clientor-color-background: #0f172a;
-  --clientor-color-surface: #111c2e;
-  --clientor-color-surface-raised: #172235;
+  --clientor-background: #0f172a;
+  --clientor-surface: #111c2e;
+  --clientor-surface-raised: #172235;
 
-  --clientor-color-text-primary: #f8fafc;
-  --clientor-color-text-secondary: #cbd5e1;
-  --clientor-color-text-muted: #94a3b8;
+  --clientor-text-primary: #f8fafc;
+  --clientor-text-secondary: #cbd5e1;
+  --clientor-text-muted: #94a3b8;
 
-  --color-border: #263449;
+  --clientor-border: #263449;
 }
 
 * {

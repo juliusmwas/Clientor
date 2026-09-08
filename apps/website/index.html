@@ -7,6 +7,19 @@
     <title>website</title>
   </head>
   <body>
+    <script>
+      (() => {
+        const stored = localStorage.getItem("clientor-theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+
+        if (stored === "dark" || (stored !== "light" && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
