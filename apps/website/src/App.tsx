@@ -1,28 +1,33 @@
-import Switch from "./components/ui/Switch";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+import Card from "./components/ui/Card";
+import Divider from "./components/ui/Divider";
 
 function App() {
   return (
     <main className="min-h-screen bg-background p-8 text-text-primary">
-      <div className="mx-auto max-w-md space-y-6">
-        <ThemeSwitcher></ThemeSwitcher>
-        <label className="flex items-center justify-between gap-4">
-          <span className="text-sm font-medium">Email notifications</span>
+      <div className="mx-auto max-w-md">
+        <Card>
+          <h2 className="text-lg font-semibold">Business settings</h2>
 
-          <Switch defaultChecked />
-        </label>
+          <p className="mt-2 text-sm text-text-secondary">
+            Manage your Clientor business preferences.
+          </p>
 
-        <label className="flex items-center justify-between gap-4">
-          <span className="text-sm font-medium">Invoice reminders</span>
+          <Divider className="my-6" />
 
-          <Switch />
-        </label>
+          <div className="flex items-center justify-between">
+            <span className="text-sm">Email notifications</span>
 
-        <label className="flex items-center justify-between gap-4">
-          <span className="text-sm font-medium">Disabled setting</span>
+            <span className="text-sm text-text-muted">Enabled</span>
+          </div>
 
-          <Switch disabled />
-        </label>
+          <Divider className="my-6" />
+
+          <div className="flex items-center justify-between">
+            <span className="text-sm">Invoice reminders</span>
+
+            <span className="text-sm text-text-muted">Enabled</span>
+          </div>
+        </Card>
       </div>
     </main>
   );
