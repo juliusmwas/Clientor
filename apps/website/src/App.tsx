@@ -1,5 +1,6 @@
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Button from "./components/ui/Button";
+import Card from "./components/ui/Card";
 
 function App() {
   return (
@@ -28,6 +29,16 @@ function App() {
         <Button loading>Loading</Button>
 
         <Button disabled>Disabled</Button>
+      </div>
+
+      <div className="mx-auto max-w-4xl mt-10">
+        <Card>
+          <h2 className="text-lg font-semibold">Card title</h2>
+
+          <p className="mt-2 text-sm text-text-secondary">
+            This is a reusable Clientor card component.
+          </p>
+        </Card>
       </div>
     </main>
   );
