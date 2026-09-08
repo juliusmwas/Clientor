@@ -1,6 +1,7 @@
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Button from "./components/ui/Button";
 import Card from "./components/ui/Card";
+import Container from "./components/ui/Container";
 
 function App() {
   return (
@@ -40,6 +41,14 @@ function App() {
           </p>
         </Card>
       </div>
+
+      <Container className="mt-10">
+        <h1 className="text-4xl font-bold">Clientor</h1>
+
+        <p className="mt-4 max-w-2xl text-text-secondary">
+          A consistent content container for the Clientor website.
+        </p>
+      </Container>
     </main>
   );
 }
