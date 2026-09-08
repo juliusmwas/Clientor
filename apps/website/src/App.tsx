@@ -1,33 +1,18 @@
-import Card from "./components/ui/Card";
-import Divider from "./components/ui/Divider";
+import Badge from "./components/ui/Badge";
 
 function App() {
   return (
     <main className="min-h-screen bg-background p-8 text-text-primary">
-      <div className="mx-auto max-w-md">
-        <Card>
-          <h2 className="text-lg font-semibold">Business settings</h2>
+      <div className="flex flex-wrap gap-3">
+        <Badge>Draft</Badge>
 
-          <p className="mt-2 text-sm text-text-secondary">
-            Manage your Clientor business preferences.
-          </p>
+        <Badge variant="success">Paid</Badge>
 
-          <Divider className="my-6" />
+        <Badge variant="warning">Overdue</Badge>
 
-          <div className="flex items-center justify-between">
-            <span className="text-sm">Email notifications</span>
+        <Badge variant="error">Cancelled</Badge>
 
-            <span className="text-sm text-text-muted">Enabled</span>
-          </div>
-
-          <Divider className="my-6" />
-
-          <div className="flex items-center justify-between">
-            <span className="text-sm">Invoice reminders</span>
-
-            <span className="text-sm text-text-muted">Enabled</span>
-          </div>
-        </Card>
+        <Badge variant="info">Viewed</Badge>
       </div>
     </main>
   );
