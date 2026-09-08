@@ -2,11 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>website</title>
-  </head>
-  <body>
+
+    <meta
+      name="description"
+      content="Clientor helps you manage clients, projects, invoices, and payments in one simple workspace."
+    />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>Clientor — Manage Your Business With Confidence</title>
+
     <script>
       (() => {
         const stored = localStorage.getItem("clientor-theme");
@@ -19,8 +28,11 @@
         }
       })();
     </script>
+  </head>
 
+  <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
