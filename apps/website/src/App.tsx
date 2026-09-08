@@ -1,54 +1,36 @@
 import ThemeSwitcher from "./components/ThemeSwitcher";
-import Button from "./components/ui/Button";
-import Card from "./components/ui/Card";
 import Container from "./components/ui/Container";
 import Section from "./components/ui/Section";
+import Typography from "./components/ui/Typography";
 
 function App() {
   return (
-    <main className="min-h-screen bg-background p-8 text-text-primary">
+    <main className="min-h-screen bg-background text-text-primary">
       <Section>
-        <div className="mx-auto flex max-w-4xl flex-col gap-8">
-          <h1 className="text-4xl font-bold">Clientor</h1>
-
+        <Container>
           <ThemeSwitcher />
-        </div>
 
-        <Container className="mt-10">
-          <h1 className="text-4xl font-bold">Clientor</h1>
+          <div className="space-y-6">
+            <Typography variant="display">
+              Run your business with Clientor.
+            </Typography>
 
-          <p className="mt-4 max-w-2xl text-text-secondary">
-            A consistent content container for the Clientor website.
-          </p>
+            <Typography variant="h2">Everything in one place.</Typography>
 
-          <div className="mx-auto flex max-w-4xl flex-wrap gap-4 my-5">
-            <Button>Primary</Button>
+            <Typography variant="body-lg">
+              Manage your clients, invoices, payments, and expenses with a
+              clean, focused workspace.
+            </Typography>
 
-            <Button variant="secondary">Secondary</Button>
+            <Typography variant="body">
+              This is standard body text for Clientor.
+            </Typography>
 
-            <Button variant="outline">Outline</Button>
+            <Typography variant="body-sm">
+              This is smaller supporting text.
+            </Typography>
 
-            <Button variant="ghost">Ghost</Button>
-
-            <Button variant="danger">Danger</Button>
-
-            <Button size="sm">Small</Button>
-
-            <Button size="lg">Large</Button>
-
-            <Button loading>Loading</Button>
-
-            <Button disabled>Disabled</Button>
-          </div>
-
-          <div className="mx-auto max-w-4xl mt-10">
-            <Card>
-              <h2 className="text-lg font-semibold">Card title</h2>
-
-              <p className="mt-2 text-sm text-text-secondary">
-                This is a reusable Clientor card component.
-              </p>
-            </Card>
+            <Typography variant="caption">Last updated today</Typography>
           </div>
         </Container>
       </Section>
