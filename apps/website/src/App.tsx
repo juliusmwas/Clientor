@@ -1,23 +1,26 @@
+import FormField from "./components/ui/FormField";
 import Input from "./components/ui/Input";
-import Label from "./components/ui/Label";
 
 function App() {
   return (
     <main className="min-h-screen bg-background p-8 text-text-primary">
       <div className="mx-auto max-w-md space-y-6">
-        <div className="space-y-2">
-          <Label htmlFor="client-name" required>
-            Client name
-          </Label>
+        <FormField
+          label="Client name"
+          htmlFor="client-name"
+          required
+          helpText="Enter the client's full name."
+        >
+          <Input id="client-name" />
+        </FormField>
 
-          <Input id="client-name" placeholder="Enter client name" />
-        </div>
-
-        <div className="space-y-2">
-          <Label htmlFor="email">Email address</Label>
-
-          <Input id="email" type="email" placeholder="you@example.com" />
-        </div>
+        <FormField
+          label="Email address"
+          htmlFor="email"
+          error="Please enter a valid email address."
+        >
+          <Input id="email" error />
+        </FormField>
       </div>
     </main>
   );
