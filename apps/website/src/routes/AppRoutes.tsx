@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PublicLayout from "../layouts/PublicLayout";
 import Home from "../pages/Home";
 import Features from "../pages/Features";
+import HowItWorks from "../pages/HowItWorks";
 
 function PlaceholderPage({ title }: { title: string }) {
   return (
@@ -20,11 +21,7 @@ function AppRoutes() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
-
-          <Route
-            path="/how-it-works"
-            element={<PlaceholderPage title="How It Works" />}
-          />
+          <Route path="/how-it-works" element={<HowItWorks />} />
 
           <Route path="/about" element={<PlaceholderPage title="About" />} />
 
