@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Features from "../pages/Features";
 import HowItWorks from "../pages/HowItWorks";
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 
 function PlaceholderPage({ title }: { title: string }) {
   return (
@@ -24,15 +25,11 @@ function AppRoutes() {
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
           <Route
             path="/help"
             element={<PlaceholderPage title="Help Center" />}
-          />
-
-          <Route
-            path="/contact"
-            element={<PlaceholderPage title="Contact" />}
           />
 
           <Route path="/faq" element={<PlaceholderPage title="FAQ" />} />
