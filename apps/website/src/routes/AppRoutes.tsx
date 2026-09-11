@@ -3,6 +3,7 @@ import PublicLayout from "../layouts/PublicLayout";
 import Home from "../pages/Home";
 import Features from "../pages/Features";
 import HowItWorks from "../pages/HowItWorks";
+import About from "../pages/About";
 
 function PlaceholderPage({ title }: { title: string }) {
   return (
@@ -22,8 +23,7 @@ function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-
-          <Route path="/about" element={<PlaceholderPage title="About" />} />
+          <Route path="/about" element={<About />} />
 
           <Route
             path="/help"
