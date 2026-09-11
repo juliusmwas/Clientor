@@ -6,6 +6,7 @@ import Features from "../pages/Features";
 import HelpCenter from "../pages/HelpCenter";
 import Home from "../pages/Home";
 import HowItWorks from "../pages/HowItWorks";
+import HelpArticlePage from "../pages/HelpArticlePage";
 
 function PlaceholderPage({ title }: { title: string }) {
   return (
@@ -33,6 +34,7 @@ function AppRoutes() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/help" element={<HelpCenter />} />
+          <Route path="/help/articles/:slug" element={<HelpArticlePage />} />
 
           <Route path="/faq" element={<PlaceholderPage title="FAQ" />} />
 
